@@ -29,7 +29,7 @@ CLAUDE.md の仕様に基づき、Next.js (App Router) + Supabase + Anthropic Cl
 - [x] 11. src/components/MessageBubble.tsx — メッセージバブル（ユーザー右寄せ・AI左寄せ、Markdownレンダリング、エラー表示）
 - [x] 12. src/components/TypingIndicator.tsx — AI応答中のタイピングインジケーター
 - [x] 13. src/components/MessageInput.tsx — 入力フォーム（Enter送信・Shift+Enter改行・応答中無効化）
-- [ ] 14. src/components/ChatContainer.tsx — チャット全体のコンテナ（メッセージ一覧 + ストリーミング受信 + スクロール制御）
+- [x] 14. src/components/ChatContainer.tsx — チャット全体のコンテナ（メッセージ一覧 + ストリーミング受信 + スクロール制御）
 
 ### Phase 6: ページ
 - [ ] 15. src/app/layout.tsx — ルートレイアウト（Tailwind CSS 適用、メタ情報）
