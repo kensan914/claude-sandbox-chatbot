@@ -27,7 +27,7 @@ CLAUDE.md の仕様に基づき、Next.js (App Router) + Supabase + Anthropic Cl
 
 ### Phase 5: UI コンポーネント（フロントエンド）
 - [x] 11. src/components/MessageBubble.tsx — メッセージバブル（ユーザー右寄せ・AI左寄せ、Markdownレンダリング、エラー表示）
-- [ ] 12. src/components/TypingIndicator.tsx — AI応答中のタイピングインジケーター
+- [x] 12. src/components/TypingIndicator.tsx — AI応答中のタイピングインジケーター
 - [ ] 13. src/components/MessageInput.tsx — 入力フォーム（Enter送信・Shift+Enter改行・応答中無効化）
 - [ ] 14. src/components/ChatContainer.tsx — チャット全体のコンテナ（メッセージ一覧 + ストリーミング受信 + スクロール制御）
 
