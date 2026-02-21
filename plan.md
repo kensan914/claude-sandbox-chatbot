@@ -17,7 +17,7 @@ CLAUDE.md の仕様に基づき、Next.js (App Router) + Supabase + Anthropic Cl
 - [x] 5. src/lib/supabase.ts — Supabase クライアント初期化
 
 ### Phase 3: 共通モジュール
-- [ ] 6. src/types/chat.ts — 型定義（Message, Thread など）
+- [x] 6. src/types/chat.ts — 型定義（Message, Thread など）
 - [ ] 7. src/lib/systemPrompt.ts — カウンセラー用システムプロンプト定義
 - [ ] 8. src/lib/anthropic.ts — Anthropic SDK クライアント初期化
 
