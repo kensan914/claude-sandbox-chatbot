@@ -26,7 +26,7 @@ CLAUDE.md の仕様に基づき、Next.js (App Router) + Supabase + Anthropic Cl
 - [x] 10. POST /api/chat (src/app/api/chat/route.ts) — ユーザーメッセージDB保存 → 会話履歴取得 → Claude ストリーミング呼び出し → AI応答DB保存
 
 ### Phase 5: UI コンポーネント（フロントエンド）
-- [ ] 11. src/components/MessageBubble.tsx — メッセージバブル（ユーザー右寄せ・AI左寄せ、Markdownレンダリング、エラー表示）
+- [x] 11. src/components/MessageBubble.tsx — メッセージバブル（ユーザー右寄せ・AI左寄せ、Markdownレンダリング、エラー表示）
 - [ ] 12. src/components/TypingIndicator.tsx — AI応答中のタイピングインジケーター
 - [ ] 13. src/components/MessageInput.tsx — 入力フォーム（Enter送信・Shift+Enter改行・応答中無効化）
 - [ ] 14. src/components/ChatContainer.tsx — チャット全体のコンテナ（メッセージ一覧 + ストリーミング受信 + スクロール制御）
