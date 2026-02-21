@@ -22,7 +22,7 @@ CLAUDE.md の仕様に基づき、Next.js (App Router) + Supabase + Anthropic Cl
 - [x] 8. src/lib/anthropic.ts — Anthropic SDK クライアント初期化
 
 ### Phase 4: API ルート（バックエンド）
-- [ ] 9. POST /api/threads (src/app/api/threads/route.ts) — スレッド新規作成 → threadId を返す
+- [x] 9. POST /api/threads (src/app/api/threads/route.ts) — スレッド新規作成 → threadId を返す
 - [ ] 10. POST /api/chat (src/app/api/chat/route.ts) — ユーザーメッセージDB保存 → 会話履歴取得 → Claude ストリーミング呼び出し → AI応答DB保存
 
 ### Phase 5: UI コンポーネント（フロントエンド）
