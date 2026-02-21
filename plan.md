@@ -23,7 +23,7 @@ CLAUDE.md の仕様に基づき、Next.js (App Router) + Supabase + Anthropic Cl
 
 ### Phase 4: API ルート（バックエンド）
 - [x] 9. POST /api/threads (src/app/api/threads/route.ts) — スレッド新規作成 → threadId を返す
-- [ ] 10. POST /api/chat (src/app/api/chat/route.ts) — ユーザーメッセージDB保存 → 会話履歴取得 → Claude ストリーミング呼び出し → AI応答DB保存
+- [x] 10. POST /api/chat (src/app/api/chat/route.ts) — ユーザーメッセージDB保存 → 会話履歴取得 → Claude ストリーミング呼び出し → AI応答DB保存
 
 ### Phase 5: UI コンポーネント（フロントエンド）
 - [ ] 11. src/components/MessageBubble.tsx — メッセージバブル（ユーザー右寄せ・AI左寄せ、Markdownレンダリング、エラー表示）
