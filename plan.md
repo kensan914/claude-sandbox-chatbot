@@ -19,7 +19,7 @@ CLAUDE.md の仕様に基づき、Next.js (App Router) + Supabase + Anthropic Cl
 ### Phase 3: 共通モジュール
 - [x] 6. src/types/chat.ts — 型定義（Message, Thread など）
 - [x] 7. src/lib/systemPrompt.ts — カウンセラー用システムプロンプト定義
-- [ ] 8. src/lib/anthropic.ts — Anthropic SDK クライアント初期化
+- [x] 8. src/lib/anthropic.ts — Anthropic SDK クライアント初期化
 
 ### Phase 4: API ルート（バックエンド）
 - [ ] 9. POST /api/threads (src/app/api/threads/route.ts) — スレッド新規作成 → threadId を返す
