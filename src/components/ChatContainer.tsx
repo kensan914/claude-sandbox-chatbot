@@ -55,6 +55,7 @@ export default function ChatContainer({ threadId, initialMessages }: Props) {
       const reader = res.body.getReader();
       const decoder = new TextDecoder();
       let fullText = "";
+      let hasError = false;
 
       while (true) {
         const { done, value } = await reader.read();
@@ -66,6 +67,7 @@ export default function ChatContainer({ threadId, initialMessages }: Props) {
         if (chunk.includes("[ERROR]:")) {
           const errorMsg = chunk.split("[ERROR]:").pop()?.trim() || "エラーが発生しました";
           setError(errorMsg);
+          hasError = true;
           break;
         }
 
@@ -73,7 +75,7 @@ export default function ChatContainer({ threadId, initialMessages }: Props) {
         setStreamingContent(fullText);
       }
 
-      if (!error) {
+      if (!hasError && fullText) {
         // ストリーミング完了後、メッセージリストに追加
         const assistantMessage: Message = {
           id: crypto.randomUUID(),
@@ -83,12 +85,12 @@ export default function ChatContainer({ threadId, initialMessages }: Props) {
           created_at: new Date().toISOString(),
         };
         setMessages((prev) => [...prev, assistantMessage]);
-        setStreamingContent("");
       }
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : "エラーが発生しました";
       setError(errorMessage);
     } finally {
+      setStreamingContent("");
       setIsLoading(false);
     }
   };
