@@ -34,7 +34,7 @@ CLAUDE.md の仕様に基づき、Next.js (App Router) + Supabase + Anthropic Cl
 ### Phase 6: ページ
 - [x] 15. src/app/layout.tsx — ルートレイアウト（Tailwind CSS 適用、メタ情報）
 - [x] 16. src/app/page.tsx — トップページ（POST /api/threads → /threads/[threadId] にリダイレクト）
-- [ ] 17. src/app/threads/[threadId]/page.tsx — スレッド詳細ページ（DB から履歴取得 → ChatContainer 表示）
+- [x] 17. src/app/threads/[threadId]/page.tsx — スレッド詳細ページ（DB から履歴取得 → ChatContainer 表示）
 
 ### Phase 7: 結合テスト・動作確認
 - [ ] 18. ローカルで bun dev 起動し、E2E の手動動作確認（スレッド作成 → メッセージ送受信 → ストリーミング表示）
