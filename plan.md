@@ -8,13 +8,13 @@ CLAUDE.md の仕様に基づき、Next.js (App Router) + Supabase + Anthropic Cl
 ## TODOリスト
 
 ### Phase 1: プロジェクト初期化
-- [ ] 1. Next.js プロジェクト作成（bun create next-app）、TypeScript + Tailwind CSS + App Router 構成
-- [ ] 2. 依存パッケージのインストール（@anthropic-ai/sdk, @supabase/supabase-js, react-markdown, remark-gfm）
-- [ ] 3. 環境変数の設定（.env.local に ANTHROPIC_API_KEY, SUPABASE 関連キーのテンプレートを用意）
+- [x] 1. Next.js プロジェクト作成（bun create next-app）、TypeScript + Tailwind CSS + App Router 構成
+- [x] 2. 依存パッケージのインストール（@anthropic-ai/sdk, @supabase/supabase-js, react-markdown, remark-gfm）
+- [x] 3. 環境変数の設定（.env.local に ANTHROPIC_API_KEY, SUPABASE 関連キーのテンプレートを用意）
 
 ### Phase 2: データベース（Supabase）
-- [ ] 4. Supabase にて threads テーブル・messages テーブルのマイグレーション SQL を作成
-- [ ] 5. src/lib/supabase.ts — Supabase クライアント初期化
+- [x] 4. Supabase にて threads テーブル・messages テーブルのマイグレーション SQL を作成
+- [x] 5. src/lib/supabase.ts — Supabase クライアント初期化
 
 ### Phase 3: 共通モジュール
 - [ ] 6. src/types/chat.ts — 型定義（Message, Thread など）
