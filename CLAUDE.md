@@ -163,6 +163,14 @@ bun run lint     # リント
 7. 敬語を使いつつも、温かみのある口調で話す
 ```
 
+## 機能別仕様書
+
+機能ごとの詳細仕様は `docs/specs/` に格納している。CLAUDE.md の肥大化を防ぐため、新機能の仕様は個別ファイルに記載すること。
+
+| 機能 | 仕様書 |
+|------|--------|
+| 画像アップロード | [docs/specs/image-upload.md](docs/specs/image-upload.md) |
+
 ## 将来的な拡張予定
 
 - Supabase Authによるユーザー認証
