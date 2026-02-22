@@ -3,6 +3,7 @@ export type Message = {
   thread_id: string;
   role: "user" | "assistant";
   content: string;
+  image_url?: string | null;
   created_at: string;
 };
 
