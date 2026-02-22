@@ -26,7 +26,8 @@ export default function ChatContainer({ threadId, initialMessages }: Props) {
     scrollToBottom();
   }, [messages, streamingContent, scrollToBottom]);
 
-  const handleSend = async (content: string) => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const handleSend = async (content: string, _image?: File | null) => {
     setIsLoading(true);
     setError(null);
     setStreamingContent("");
